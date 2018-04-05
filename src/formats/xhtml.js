@@ -120,10 +120,6 @@
 		code: {
 			txtExec: ['<code>', '</code>']
 		},
-		c: {
-			txtExec: ['<span class="inline-code" data-inline-code="1">',
-				'</span>']
-		},
 		image: {
 			txtExec: function (caller, selected) {
 				var	editor  = this;
