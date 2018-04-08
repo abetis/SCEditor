@@ -1246,3 +1246,4 @@
 
 	sceditor.formats.xhtml = xhtmlFormat;
 }(sceditor));
+
