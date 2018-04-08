@@ -357,14 +357,5 @@ export default {
 	 *
 	 * @type {Object}
 	 */
-	dropDownCss: { },
-
-	/**
-	 * Set to true to allow creation of inline code segments wrapped with
-	 * [c]code[/c] tags
-	 *
-	 * @type {boolean}
-	 */
-	allowInlineCode: true
-
+	dropDownCss: { }
 };
