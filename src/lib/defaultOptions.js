@@ -317,7 +317,7 @@ export default {
 	 *
 	 * @type {string}
 	 */
-	plugins: 'undo,code,format',
+	plugins: 'undo,inline-code,format',
 
 	/**
 	 * z-index to set the editor container to. Needed for jQuery UI dialog.
