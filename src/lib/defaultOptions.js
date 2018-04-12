@@ -350,7 +350,15 @@ export default {
 	 *
 	 * @type {Object}
 	 */
-	parserOptions: { },
+	parserOptions: {
+		/**
+		* Parameters that will be added to YouTube frame tag
+		*
+		* @type {string}
+		*/
+		youtubeParameters: 'width="380" height="250" frameborder="0" ' +
+			'allowfullscreen title="YouTube Video"'
+	},
 
 	/**
 	 * CSS that will be added to the to dropdown menu (eg. z-index)
