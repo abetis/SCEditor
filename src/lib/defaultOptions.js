@@ -356,8 +356,8 @@ export default {
 		*
 		* @type {string}
 		*/
-		youtubeParameters: 'width="560" height="315" frameborder="0" ' +
-			'allowfullscreen'
+		youtubeParameters: 'width="380" height="250" frameborder="0" ' +
+			'allowfullscreen title="YouTube Video"'
 	},
 
 	/**
