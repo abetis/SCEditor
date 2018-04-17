@@ -317,7 +317,7 @@ export default {
 	 *
 	 * @type {string}
 	 */
-	plugins: 'undo,inline-code,format,percentage-fontsize,list-enhanced',
+	plugins: 'undo,inline-code,format,percentage-fontsize,list-enhanced,video',
 
 	/**
 	 * z-index to set the editor container to. Needed for jQuery UI dialog.
@@ -357,7 +357,17 @@ export default {
 		* @type {string}
 		*/
 		youtubeParameters: 'width="380" height="250" frameborder="0" ' +
-			'allowfullscreen title="YouTube Video"'
+			'allowfullscreen title="YouTube Video"',
+
+		/**
+			* Parameters that will be added to Facebook frame tag
+			*
+			* @type {string}
+			*/
+		facebookParameters: 'width="380" height="250" ' +
+			'style="border:none;overflow:hidden" scrolling="no" ' +
+			'frameborder="0" allowTransparency="true" allowFullScreen="true" ' +
+			'title="Facebook Video"'
 	},
 
 	/**
