@@ -16,7 +16,8 @@ export default {
 		'left,center,right,justify|font,size,color,removeformat|' +
 		'cut,copy,pastetext|bulletlist,orderedlist,indent,outdent|' +
 		'table|code,quote|horizontalrule,image,email,link,unlink|' +
-		'emoticon,youtube,date,time|ltr,rtl|print,maximize,source',
+		'emoticon,youtube,date,time|ltr,rtl|product,productslist|' +
+		'print,maximize,source',
 
 	/**
 	 * Comma separated list of commands to excludes from the toolbar
@@ -317,7 +318,8 @@ export default {
 	 *
 	 * @type {string}
 	 */
-	plugins: 'undo,inline-code,format,percentage-fontsize,list-enhanced,video',
+	plugins: 'undo,inline-code,format,percentage-fontsize,list-enhanced,' +
+		'video,products',
 
 	/**
 	 * z-index to set the editor container to. Needed for jQuery UI dialog.
