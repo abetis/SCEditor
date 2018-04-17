@@ -24,7 +24,12 @@ export default {
 	 *
 	 * @type {string}
 	 */
-	toolbarExclude: null,
+	//toolbarExclude: null,
+	// TODO: add to parser the excluded list
+	// Alex changed to:
+	toolbarExclude: 'strike,subscript,superscript,left,center,right,' +
+		'justify,indent,outdent,table,font,indent,outdent,horizontalrule,' +
+		'ltr,rtl,print',
 
 	/**
 	 * Stylesheet to include in the WYSIWYG editor. This is what will style
@@ -39,8 +44,10 @@ export default {
 	 *
 	 * @type {string}
 	 */
-	fonts: 'Arial,Arial Black,Comic Sans MS,Courier New,Georgia,Impact,' +
-		'Sans-serif,Serif,Times New Roman,Trebuchet MS,Verdana',
+	//fonts: 'Arial,Arial Black,Comic Sans MS,Courier New,Georgia,Impact,' +
+	//	'Sans-serif,Serif,Times New Roman,Trebuchet MS,Verdana',
+	// Alex changed to:
+	fonts: 'Lucida Grande, Trebuchet MS, Verdana, Helvetica, Arial, sans-serif',
 
 	/**
 	 * Colors should be comma separated and have a bar | to signal a new
@@ -85,7 +92,8 @@ export default {
 	 *
 	 * @type {boolean}
 	 */
-	emoticonsCompat: false,
+	// Alex changed to true, was false
+	emoticonsCompat: true,
 
 	/**
 	 * If to enable emoticons. Can be changes at runtime using the
@@ -102,6 +110,7 @@ export default {
 	 * @type {string}
 	 */
 	emoticonsRoot: '',
+	/*
 	emoticons: {
 		dropdown: {
 			':)': 'emoticons/smile.png',
@@ -141,6 +150,126 @@ export default {
 		hidden: {
 			':whistling:': 'emoticons/whistling.png',
 			':love:': 'emoticons/wub.png'
+		}
+	},
+	*/
+	// Alex changed to:
+	emoticons: {
+		dropdown: {
+			':)': 'emoticons/smile.png',
+			':angel:': 'emoticons/angel.png',
+			':angry:': 'emoticons/angry.png',
+			'8-)': 'emoticons/cool.png',
+			':cry:(': 'emoticons/cwy.png',
+			':ermm:': 'emoticons/ermm.png',
+			':D': 'emoticons/grin.png',
+			'<3': 'emoticons/heart.png',
+			':(': 'emoticons/sad.png',
+			':shocked:': 'emoticons/shocked.png',
+			':P': 'emoticons/tongue.png',
+			';)': 'emoticons/wink.png'
+		},
+		more: {
+			':alien:': 'emoticons/alien.png',
+			':blink:': 'emoticons/blink.png',
+			':blush:': 'emoticons/blush.png',
+			':cheerful:': 'emoticons/cheerful.png',
+			':devil:': 'emoticons/devil.png',
+			':dizzy:': 'emoticons/dizzy.png',
+			':getlost:': 'emoticons/getlost.png',
+			':happy:': 'emoticons/happy.png',
+			':kissing:': 'emoticons/kissing.png',
+			':ninja:': 'emoticons/ninja.png',
+			':pinch:': 'emoticons/pinch.png',
+			':pouty:': 'emoticons/pouty.png',
+			':sick:': 'emoticons/sick.png',
+			':sideways:': 'emoticons/sideways.png',
+			':silly:': 'emoticons/silly.png',
+			':sleeping:': 'emoticons/sleeping.png',
+			':unsure:': 'emoticons/unsure.png',
+			':woot:': 'emoticons/w00t.png',
+			':wassat:': 'emoticons/wassat.png',
+			':whistling:': 'emoticons/whistling.png',
+			':love:': 'emoticons/wub.png',
+			':lol:': 'emoticons/laughing.png',
+			':face:': 'emoticons/face.png',
+			':arrow:': 'emoticons/arrow.gif',
+			':eek:': 'emoticons/eek.gif',
+			':evil:': 'emoticons/evil.gif',
+			':!:': 'emoticons/exclaim.gif',
+			':?:': 'emoticons/question.gif',
+			':geek:': 'emoticons/geek.gif',
+			':idea:': 'emoticons/idea.gif',
+			':mrgreen:': 'emoticons/mrgreen.gif',
+			':|': 'emoticons/neutral.gif',
+			':rolleyes:': 'emoticons/rolleyes.gif',
+			':O': 'emoticons/surprised.gif',
+			':ugeek:': 'emoticons/ugeek.gif',
+			':clap:': 'emoticons/clap.gif',
+			':crazy:': 'emoticons/crazy.gif',
+			':eh:': 'emoticons/eh.gif',
+			':lolno:': 'emoticons/lolno.gif',
+			':problem:': 'emoticons/problem.gif',
+			':shh:': 'emoticons/shh.gif',
+			':shifty:': 'emoticons/shifty.gif',
+			':silent:': 'emoticons/silent.gif',
+			':think:': 'emoticons/think.gif',
+			':thumbdown:': 'emoticons/thumbdown.gif',
+			':thumbup:': 'emoticons/thumbup.gif',
+			':wave:': 'emoticons/wave.gif',
+			':wtf:': 'emoticons/wtf.gif',
+			':yawn:': 'emoticons/yawn.gif',
+			':confused:': 'emoticons/confused.gif'
+		},
+		hidden: {
+			'(:': 'emoticons/smile.png',
+			':smile:': 'emoticons/smile.png',
+			':smiling:': 'emoticons/smile.png',
+			'D:': 'emoticons/grin.png',
+			':biggrin:': 'emoticons/grin.png',
+			':grin:': 'emoticons/grin.png',
+			'(-8': 'emoticons/cool.png',
+			':cool:': 'emoticons/cool.png',
+			':\'(': 'emoticons/cwy.png',
+			':cwy:': 'emoticons/cwy.png',
+			':verysad:': 'emoticons/cwy.png',
+			'[=': 'emoticons/sideways.png',
+			'(;': 'emoticons/wink.png',
+			':wink:': 'emoticons/wink.png',
+			':x': 'emoticons/angry.png',
+			'x:': 'emoticons/angry.png',
+			':X': 'emoticons/angry.png',
+			'X:': 'emoticons/angry.png',
+			':mad:': 'emoticons/angry.png',
+			'P:': 'emoticons/tongue.png',
+			':p': 'emoticons/tongue.png',
+			'p:': 'emoticons/tongue.png',
+			':razz:': 'emoticons/tongue.png',
+			':tongue:': 'emoticons/tongue.png',
+			':heart:': 'emoticons/heart.png',
+			':laughing:': 'emoticons/laughing.png',
+			':sad:': 'emoticons/sad.png',
+			'):': 'emoticons/sad.png',
+			':oops:': 'emoticons/blush.png',
+			':redface:': 'emoticons/blush.png',
+			':notsure:': 'emoticons/unsure.png',
+			':love:': 'emoticons/wub.png',
+			':twisted:': 'emoticons/devil.png',
+			':kiss:': 'emoticons/kissing.png',
+			'=]': 'emoticons/sideways.png',
+			':shock:': 'emoticons/eek.gif',
+			':verymad:': 'emoticons/evil.gif',
+			':exclaim:': 'emoticons/exclaim.gif',
+			':question:': 'emoticons/question.gif',
+			':roll:': 'emoticons/rolleyes.gif',
+			'?:': 'emoticons/confused.gif',
+			':?': 'emoticons/confused.gif',
+			'O:': 'emoticons/surprised.gif',
+			':o': 'emoticons/surprised.gif',
+			'o:': 'emoticons/surprised.gif',
+			':surprised:': 'emoticons/surprised.gif',
+			'|:': 'emoticons/neutral.gif',
+			':neutral:': 'emoticons/neutral.gif'
 		}
 	},
 
@@ -215,7 +344,9 @@ export default {
 	 *
 	 * @type {string}
 	 */
-	dateFormat: 'year-month-day',
+	//dateFormat: 'year-month-day',
+	// Alex changed to:
+	dateFormat: 'day/month/year',
 
 	/**
 	 * Element to inset the toolbar into.
@@ -281,7 +412,9 @@ export default {
 	 *
 	 * @type {boolean}
 	 */
-	autoUpdate: false,
+	// Alex changed to true since submitting forms from script doesn't trigger
+	// the submit event in the SCEditor
+	autoUpdate: true,
 
 	/**
 	 * If to enable the browsers built in spell checker
@@ -334,7 +467,9 @@ export default {
 	 *
 	 * @type {boolean}
 	 */
-	bbcodeTrim: false,
+	//bbcodeTrim: false,
+	// Alex set to true
+	bbcodeTrim: true,
 
 	/**
 	 * If to disable removing block level elements by pressing backspace at
@@ -377,5 +512,65 @@ export default {
 	 *
 	 * @type {Object}
 	 */
-	dropDownCss: { }
+	dropDownCss: { },
+
+	// list-enhanced plugin configuration
+	listEnhanced: {
+		/**
+		* Default configuration of the ordered list options.
+		*
+		* The list should include BBCode tagName, valid css style
+		* list-style-type and the description of the option that
+		* will be shown in the dropdown list
+		*
+		* The format of the list is:
+		* bbCode-type: { "type": style-type, "description": Description }
+		*
+		* @type {Object}
+		*/
+		orderedList: {
+			'1': {
+				type: 'decimal',
+				description: 'Decimal numbers (1, 2, 3, 4)'
+			},
+			'h': {
+				type: 'hebrew',
+				description: 'Hebrew letters (א, ב, ג, ד)'
+			},
+			'a': {
+				type: 'lower-alpha',
+				description: 'Alphabetic lowercase (a, b, c, d)'
+			},
+			'A': {
+				type: 'upper-alpha',
+				description: 'Alphabetic uppercase (A, B, C, D)'
+			},
+			'i': {
+				type: 'lower-roman',
+				description: 'Roman lowercase (i, ii, iii, iv)'
+			},
+			'I': {
+				type: 'upper-roman',
+				description: 'Roman uppercase (I, II, III, IV)'
+			}
+		},
+
+		/**
+		* Default configuration of the bullet list options.
+		*
+		* The list should include BBCode tagName, which is valid css style name
+		* and the description of the option that will be shown in the
+		* dropdown list
+		*
+		* The format of the list is:
+		* bbCode-type: Description
+		*
+		* @type {Object}
+		*/
+		bulletList: {
+			'disc': 'Bullet',
+			'circle': 'Circle',
+			'square': 'Square'
+		}
+	}
 };

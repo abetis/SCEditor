@@ -109,7 +109,7 @@ QUnit.test('HTML to BBCode trim', function (assert) {
 QUnit.module('plugins/bbcode - HTML to BBCode', {
 	beforeEach: function () {
 		this.mockEditor = {
-			opts: $.extend({}, defaultOptions)
+			opts: $.extend({}, defaultOptions, { bbcodeTrim: false })
 		};
 
 		this.format = new sceditor.formats.bbcode();
