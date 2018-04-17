@@ -41,14 +41,11 @@
 				return;
 			}
 
-			if (opts.toolbar === sceditor.defaultOptions.toolbar) {
-				opts.toolbar = opts.toolbar.replace(',image,',
-					',image,video,');
+			// Add video command after the image command
+			opts.toolbar = opts.toolbar.replace(',image,', ',image,video,');
 
-				opts.toolbar = opts.toolbar.replace(',youtube', '');
-			}
-
-			// Remove youtube command
+			// Remove the youtube command
+			opts.toolbar = opts.toolbar.replace(',youtube', '');
 			sceditor.command.remove('youtube');
 
 			// Add new movie command

@@ -86,10 +86,8 @@
 				});
 			}
 
-			if (opts.toolbar === sceditor.defaultOptions.toolbar) {
-				opts.toolbar = opts.toolbar.replace(',color,',
-					',color,format,');
-			}
+			// Add format command after the color
+			opts.toolbar = opts.toolbar.replace(',color,', ',color,format,');
 		};
 
 		/**
