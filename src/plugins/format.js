@@ -33,6 +33,8 @@
 			pre: 'Preformatted Text'
 		};
 
+		// BBCode should not implement <p> tag, otherwise all the lines will be
+		// wrapped with [p][/p] tags
 		var bbcodeTags = {
 			h1: 'Heading 1',
 			h2: 'Heading 2',
