@@ -2280,7 +2280,8 @@
 			ol: ['li', 'ol', 'ul'],
 			table: ['tr'],
 			tr: ['td', 'th'],
-			code: ['br', 'p', 'div']
+			code: ['br', 'p', 'div'],
+			span: ['br', 'img']
 		};
 
 		/**
