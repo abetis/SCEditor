@@ -452,7 +452,7 @@ export default {
 	 * @type {string}
 	 */
 	plugins: 'undo,inline-code,format,percentage-fontsize,list-enhanced,' +
-		'video,products',
+		'video,products,plaintext',
 
 	/**
 	 * z-index to set the editor container to. Needed for jQuery UI dialog.
